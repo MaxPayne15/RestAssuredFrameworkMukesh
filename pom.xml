@@ -81,12 +81,6 @@
             <artifactId>commons-lang3</artifactId>
             <version>${apacheCommonLangVersion}</version>
         </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.5.0</version>
-            <scope>compile</scope>
-        </dependency>
 
     </dependencies>
 
