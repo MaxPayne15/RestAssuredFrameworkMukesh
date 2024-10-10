@@ -1,4 +1,4 @@
-package utils;
+package restUtils;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -20,7 +20,7 @@ public class RestUtils {
                 .log().all().extract().response();
     }
 
-    public static Response performPost(String endPoint, Map<String, Object> requestPayload, Map<String,String> headers) {
+    public static io.restassured.response.Response performPost(String endPoint, Map<String, Object> requestPayload, Map<String,String> headers) {
         return RestAssured.given()
                 .log().all()
                 .baseUri(endPoint)
